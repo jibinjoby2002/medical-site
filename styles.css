@@ -1,0 +1,372 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background:transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    transition: color 0.3s;
+    font-family: 'Bebas Neue';
+}
+
+nav a:hover {
+    color: #4c4c9d;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 80px;
+    min-height: 100vh;
+}
+
+.phish{
+   height: 100px;
+   width: 200px;
+   background-color: red;
+   position: absolute;
+   border-radius: 0 200px 200px 0;
+   background-color: transparent;
+   border: 2px solid white;
+   top: 150px;
+   transform: rotate(-45deg);
+   left: -40px;
+
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    overflow: hidden;
+}
+.home-content h1{
+    color: #2b3868;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family:'Bebas Neue';
+    line-height: 50px;
+}
+.home-content p{
+    color: #2b3868;
+    font-family: 'Bebas Neue';
+}
+.home-content{
+    position:   absolute;
+    right: 200px;
+}
+
+/* Top-right Circle */
+.top-right-circle {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 500px;
+    height: 500px;
+    background:#decbe3;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Bottom-left Circle with Image & Contact Info */
+.bottom-left-container {
+    position: absolute;
+    bottom: -7px;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    border-radius: 0 200px 200px 0;
+    background-color: #decbe3;
+    transform: rotate(-31deg);
+    display: flex;
+    
+    flex-direction: row-reverse;
+}
+
+/* Circle Image */
+.circle-image {
+    width: 300px;
+    height: 300px;
+    background: green;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #f4e1fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    ;
+    
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-left: 20px;
+    color: #555;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-info strong {
+    font-size: 18px;
+    color: #333;
+}
+
+/* About Section */
+.about-section {
+    background: #ffffff;
+    color: #333;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#about{
+    position:relative;
+    overflow: hidden;
+}
+
+
+.about-section .about-top-left-circle{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    top: -400px;
+    left: -50px;
+    background-color:#decbe3;
+    z-index: 1;
+}
+.about-section  .about-top-right-circle{
+
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    top: -100px;
+    right: -50px;
+    background-color: #decbe3;
+    z-index: 1;
+   
+} 
+
+
+.about-section .about-buttom-left-circle{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    bottom: -150px;
+    left: -50px;
+    background-color: #decbe3;
+    z-index: 1;
+
+} 
+.about-section .content{
+    position: absolute;
+    z-index: 5;
+
+}
+
+
+
+
+
+
+
+
+
+/* Products & Services Section */
+#services {
+    background: #fff;
+    color: #333;
+    text-align: center;
+}
+
+#services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#services p {
+    font-size: 18px;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .bottom-left-container {
+        flex-direction: column;
+        bottom: -30px;
+        left: 10px;
+    }
+
+    .circle-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .top-right-circle {
+        width: 300px;
+        height: 300px;
+        top: -50px;
+        right: -50px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* Slider Container */
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    flex-direction: column;
+    padding:10px;
+}
+
+.slider-container .box{
+    width: 350px;
+    height: 600px;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+.box .product-image{
+    height: 250px;
+    width: inherit;
+    
+
+}
+
+.box .product-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.product-content{
+    padding: 5px;
+
+}
+.product-content p:nth-child(1){
+    font-family: 'Babes Neue';
+    color: #2b3868;
+    font-size: 5px;
+    font-weight: bold;
+    line-height:67px;
+    text-align: justify;
+}
+.product-content p:nth-child(2){
+    font-family: 'Babes Neue';
+    color: #2b3868;
+    font-size: 5px;
+    font-weight: bold;
+    line-height:67px;
+    text-align: justify;
+}
+
+
+.product-content p:nth-child(3){
+    font-family: 'Babes Neue';
+    color: #2b3868;
+    font-size: 5px;
+    text-align: justify;
+}
+
