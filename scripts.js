@@ -1,17 +1,26 @@
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+// JavaScript for the Slider Functionality
+function moveSlide(direction, sliderId) {
+    const slider = document.querySelector(`#${sliderId} .slider`);
+    const slides = slider.querySelectorAll('img');
+    const slideWidth = slides[0].clientWidth;
 
-document.querySelector('.next-btn').addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlider();
-});
+    // Get current transform value
+    const currentTransform = getComputedStyle(slider).transform;
+    let currentTranslateX = currentTransform !== 'none' 
+        ? parseInt(currentTransform.split(',')[4]) 
+        : 0;
 
-document.querySelector('.prev-btn').addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateSlider();
-});
+    // Calculate new position
+    let newTranslateX = currentTranslateX + (direction * slideWidth);
 
-function updateSlider() {
-    const slider = document.querySelector('.slider-container');
-    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    // Looping the slides
+    if (newTranslateX < -(slideWidth * (slides.length - 1))) {
+        newTranslateX = 0;
+    } else if (newTranslateX > 0) {
+        newTranslateX = -(slideWidth * (slides.length - 1));
+    }
+
+    // Apply the transform
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(${newTranslateX}px)`;
 }

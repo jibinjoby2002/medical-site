@@ -31,7 +31,7 @@
     <section id="home" class="section">
       <!-- Top-right circle -->
       <div class="top-right-circle">
-        <div class="phish">ffasfa</div>
+        <div class="phish"></div>
       </div>
 
       <!-- Bottom-left circle with image and contact info -->
@@ -91,34 +91,72 @@
 
     <!-- Products & Services Section -->
     <section id="services" class="section">
+      <div class="service-circle"></div>
       <h1>Our Products & Services</h1>
-      <p>
-        We offer a wide range of biomedical equipment and maintenance services.
-      </p>
-
+      <p>We offer a wide range of biomedical equipment and maintenance services.</p>
+  
       <div class="slider-container">
-        <div class="box-one box">
-          <div class="product-image">
-            <img src="public\assets\svg\programmer.jpg" alt="" />
+  
+          <!-- Card 1 -->
+          <div class="box-one box">
+              <div class="slider-wrapper" id="slider1">
+                  <div class="slider">
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+                  </div>
+                  <button class="btn prev" onclick="moveSlide(-1, 'slider1')">❮</button>
+                  <button class="btn next" onclick="moveSlide(1, 'slider1')">❯</button>
+              </div>
+  
+              <div class="product-content">
+                  <p>Omron MC 246 Digital Thermometer</p>
+                  <p>$345 - $354</p>
+                  <p>Quick measurement of oral & underarm temperature in Celsius & Fahrenheit.</p>
+              </div>
           </div>
-          <div class="product-content">
-            <p>Omron MC 246 Digital Thermometer</p>
-            <p>$345 - $354</p>
-            <p>
-              Omron MC 246 Digital Thermometer With Quick Measurement of Oral &
-              Underarm Temperature in Celsius & Fahrenheit, Water Resistant for
-              Easy Cleaning
-            </p>
+  
+          <!-- Card 2 -->
+          <div class="box-one box">
+              <div class="slider-wrapper" id="slider2">
+                  <div class="slider">
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 4" />
+                      <img src="public/assets/logo/Asset 7.png" alt="Product 5" />
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 6" />
+                  </div>
+                  <button class="btn prev" onclick="moveSlide(-1, 'slider2')">❮</button>
+                  <button class="btn next" onclick="moveSlide(1, 'slider2')">❯</button>
+              </div>
+  
+              <div class="product-content">
+                  <p>Blood Pressure Monitor</p>
+                  <p>$120 - $150</p>
+                  <p>Accurate and easy-to-use monitor with large display.</p>
+              </div>
           </div>
-        </div>
-        
+  
+          <!-- Card 3 -->
+          <div class="box-one box">
+              <div class="slider-wrapper" id="slider3">
+                  <div class="slider">
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 7" />
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 8" />
+                      <img src="public/assets/svg/programmer.jpg" alt="Product 9" />
+                  </div>
+                  <button class="btn prev" onclick="moveSlide(-1, 'slider3')">❮</button>
+                  <button class="btn next" onclick="moveSlide(1, 'slider3')">❯</button>
+              </div>
+  
+              <div class="product-content">
+                  <p>Stethoscope</p>
+                  <p>$50 - $70</p>
+                  <p>Precision stethoscope with enhanced acoustics for accurate diagnosis.</p>
+              </div>
+          </div>
+  
       </div>
-
-      <div class="controls">
-        <button class="prev-btn">❮</button>
-        <button class="next-btn">❯</button>
-      </div>
-    </section>
+  </section>
+  
 
     <!-- Contact Us Section -->
     <section id="contact" class="section contact-section">
@@ -128,5 +166,8 @@
 
     <!-- Smooth Scrolling Script -->
     <script src="scripts.js"></script>
+    <script>
+      
+    </script>
   </body>
 </html>
