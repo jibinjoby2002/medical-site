@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
   </head>
   <body>
     <!-- Navbar -->
@@ -22,7 +26,9 @@
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
+        <a href="#product">services</a>
         <a href="#services">Products & Services</a>
+        
         <a href="#contact">Contact Us</a>
       </nav>
     </header>
@@ -40,8 +46,8 @@
           <img src="public\assets\svg\programmer.jpg" alt="Medical Equipment" />
         </div>
         <div class="contact-info">
-          <p><strong>Get in touch</strong></p>
-          <p>assist.hora@hotmail.com</p>
+          <p class="mail-head"><strong class="mail-head">Get in touch</strong></p>
+          <p class="mail">assist.hora@hotmail.com</p>
         </div>
       </div>
 
@@ -73,20 +79,36 @@
 
         <h2>Vision and Mission</h2>
         <div class="vision-mission">
-          <strong>Vision:</strong>
-          <p>
-            To be a trusted leader in biomedical solutions, delivering
+          <!-- <strong>Vision:</strong> -->
+          <p class="vision">
+            <span>vision: </span>To be a trusted leader in biomedical solutions, delivering
             innovation and excellence in healthcare.
           </p>
 
-          <strong>Mission:</strong>
-          <p>
-            To provide high-quality medical equipment, improve device solutions,
+          <!-- <strong>Mission:</strong> -->
+          <p class="mission">
+            <span>mission: </span>To provide high-quality medical equipment, improve device solutions,
             and offer reliable support to healthcare providers to achieve
             exceptional patient care.
           </p>
         </div>
       </div>
+    </section>
+
+    <section id="product" class="section">
+      <h1 class="service-head">services</h1>
+      <h5 class="service-h5">our services :</h5>
+      <div class="service-content">
+        <p> <span>Maintenance and Repairs : </span> Regular servicing to maintain equipment functionality and reliability.</p>
+        <p> <span>Emergency Services:</span> Fast response to minimize downtime and ensure uninterrupted patient care.
+        </p>
+        <p> <span>Installation and Setup : </span> Proper installation in hospitals, clinics, and healthcare settings. Training for
+          professionals to ensure optimal usage.</p>
+          <p> <span>Consultation & Solutions : </span> Expert guidance on choosing the best biomedical equipment for healthcare
+            needs.</p>
+      </div>
+
+
     </section>
 
     <!-- Products & Services Section -->
@@ -153,6 +175,60 @@
                   <p>Precision stethoscope with enhanced acoustics for accurate diagnosis.</p>
               </div>
           </div>
+
+          <div class="box-one box">
+            <div class="slider-wrapper" id="slider1">
+                <div class="slider">
+                    <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+                    <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+                    <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+                </div>
+                <button class="btn prev" onclick="moveSlide(-1, 'slider1')">❮</button>
+                <button class="btn next" onclick="moveSlide(1, 'slider1')">❯</button>
+            </div>
+
+            <div class="product-content">
+                <p>Omron MC 246 Digital Thermometer</p>
+                <p>$345 - $354</p>
+                <p>Quick measurement of oral & underarm temperature in Celsius & Fahrenheit.</p>
+            </div>
+        </div>
+
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider1">
+              <div class="slider">
+                  <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+                  <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+                  <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+              </div>
+              <button class="btn prev" onclick="moveSlide(-1, 'slider1')">❮</button>
+              <button class="btn next" onclick="moveSlide(1, 'slider1')">❯</button>
+          </div>
+
+          <div class="product-content">
+              <p>Omron MC 246 Digital Thermometer</p>
+              <p>$345 - $354</p>
+              <p>Quick measurement of oral & underarm temperature in Celsius & Fahrenheit.</p>
+          </div>
+      </div>
+
+      <div class="box-one box">
+        <div class="slider-wrapper" id="slider1">
+            <div class="slider">
+                <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+                <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+                <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider1')">❮</button>
+            <button class="btn next" onclick="moveSlide(1, 'slider1')">❯</button>
+        </div>
+
+        <div class="product-content">
+            <p>Omron MC 246 Digital Thermometer</p>
+            <p>$345 - $354</p>
+            <p>Quick measurement of oral & underarm temperature in Celsius & Fahrenheit.</p>
+        </div>
+    </div>
   
       </div>
   </section>
@@ -160,9 +236,46 @@
 
     <!-- Contact Us Section -->
     <section id="contact" class="section contact-section">
-      <h1>Contact Us</h1>
-      <p>Get in touch with us for more information.</p>
+      <div class="contact-circle"></div>
+      <div class="contact-container">
+        <div class="contact-info-form">
+          <h1>Contact Us</h1>
+          <p>Get in touch with us to learn more about our medical equipment and services.</p>
+          <ul>
+            <li><strong>Email:</strong> info@medicalequipments.com</li>
+            <li><strong>Phone:</strong> +1 (800) 555-1234</li>
+            <li><strong>Address:</strong> 123 Medical Ave, Health City</li>
+          </ul>
+        </div>
+    
+        <!-- Google Form -->
+        <form 
+          action="YOUR_GOOGLE_FORM_ACTION_URL" 
+          method="POST" 
+          target="_blank" 
+          class="contact-form">
+    
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="entry.YOUR_NAME_FIELD_ID" placeholder="Enter your name" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="entry.YOUR_EMAIL_FIELD_ID" placeholder="Enter your email" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea name="entry.YOUR_MESSAGE_FIELD_ID" placeholder="Write your message here..." rows="5" required></textarea>
+          </div>
+    
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
+    
+    
 
     <!-- Smooth Scrolling Script -->
     <script src="scripts.js"></script>
