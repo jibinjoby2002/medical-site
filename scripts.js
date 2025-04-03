@@ -79,19 +79,45 @@ gsap.fromTo('.home-content h1,.home-content p',{
 });
 
 
-/// Hamburger menu functionality
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navLinks.classList.toggle("active");
+// Hamburger menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('active');
 });
 
-// Close menu when clicking on a link
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navLinks.classList.remove("active");
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
   });
 });
+
+// Slider functionality
+function moveSlide(direction, sliderId) {
+  const slider = document.querySelector(`#${sliderId} .slider`);
+  const slides = document.querySelectorAll(`#${sliderId} .slider img`);
+  const slideWidth = slides[0].clientWidth;
+  const currentPosition = parseInt(slider.style.transform?.replace('translateX(', '')?.replace('px)', '')) || 0;
+  
+  let newPosition = currentPosition + (direction * slideWidth);
+  
+  // Don't scroll beyond first or last slide
+  if (newPosition > 0) newPosition = 0;
+  if (newPosition < -(slideWidth * (slides.length - 1))) newPosition = -(slideWidth * (slides.length - 1));
+  
+  slider.style.transform = `translateX(${newPosition}px)`;
+}
+
+// Initialize sliders
+document.querySelectorAll('.slider').forEach(slider => {
+  slider.style.transform = 'translateX(0px)';
+});
+
+function toggleWhatsApp() {
+  document.querySelector(".whatsapp-container").classList.toggle("active");
+}

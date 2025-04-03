@@ -1,367 +1,393 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>HORA Biomedical Systems</title>
-      <link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HORA Biomedical Systems</title>
+    <link rel="stylesheet" href="styles.css" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap"
-        rel="stylesheet"
-      />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    </head>
-    <body>
-      <!-- Navbar -->
-      <!-- <header class="navbar">
-        <div class="logo">
-          <img src="public\assets\logo\Asset 7.png" alt="Logo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <header class="navbar">
+      <div class="logo">
+        <img src="public\assets\logo\Asset 7.png" alt="Logo" />
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#product">services</a>
+        <a href="#services">Products & Services</a>
+
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </header> -->
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="public\assets\logo\Asset 7.png" alt="Logo" />
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#product">services</a>
+        <a href="#services">Products & Services</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <!-- Home Section with Circles -->
+    <section id="home" class="section">
+      <!-- Top-right circle -->
+      <div class="top-right-circle">
+        <div class="phish"></div>
+      </div>
+
+      <!-- Bottom-left circle with image and contact info -->
+      <div class="bottom-left-container">
+        <div class="circle-image">
+          <img src="public\assets\svg\programmer.jpg" alt="Medical Equipment" />
         </div>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#product">services</a>
-          <a href="#services">Products & Services</a>
-
-          <a href="#contact">Contact Us</a>
-        </nav>
-      </header> -->
-
-
-
-      <!-- Navbar -->
-<header class="navbar">
-  <div class="logo">
-    <img src="public\assets\logo\Asset 7.png" alt="Logo" />
-  </div>
-  <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#product">services</a>
-    <a href="#services">Products & Services</a>
-    <a href="#contact">Contact Us</a>
-  </nav>
-  <div class="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
-</header>
-
-      <!-- Home Section with Circles -->
-      <section id="home" class="section">
-        <!-- Top-right circle -->
-        <div class="top-right-circle">
-          <div class="phish"></div>
-        </div>
-
-        <!-- Bottom-left circle with image and contact info -->
-        <div class="bottom-left-container">
-          <div class="circle-image">
-            <img src="public\assets\svg\programmer.jpg" alt="Medical Equipment" />
-          </div>
-          <div class="contact-info">
-            <p class="mail-head">
-              <strong class="mail-head">Get in touch</strong>
-            </p>
-            <p class="mail">assist.hora@hotmail.com</p>
-          </div>
-        </div>
-
-        <!-- Content -->
-        <div class="home-content">
-          <h1>
-            Reliable biomedical <br />
-            equipments solution
-          </h1>
-          <p>Ensuring Safety and Excellence in Healthcare.</p>
-        </div>
-      </section>
-
-      <!-- About Us Section -->
-      <section id="about" class="section about-section">
-        <div class="about-top-left-circle"></div>
-        <div class="about-top-right-circle"></div>
-        <div class="about-buttom-left-circle"></div>
-        <div class="content">
-          <h1>ABOUT US</h1>
-          <p>
-            HORA Biomedical Systems is a trusted leader in biomedical equipment
-            sales and services, based in Bengaluru, Karnataka. Our mission is to
-            provide top-quality medical equipment solutions, backed by a team of
-            qualified and experienced professionals. We aim to enhance healthcare
-            facilities by offering cutting-edge technology, reliable support, and
-            comprehensive maintenance services.
+        <div class="contact-info">
+          <p class="mail-head">
+            <strong class="mail-head">Get in touch</strong>
           </p>
-
-          <h2>Vision and Mission</h2>
-          <div class="vision-mission">
-            <!-- <strong>Vision:</strong> -->
-            <p class="vision">
-              <span>vision: </span>To be a trusted leader in biomedical solutions,
-              delivering innovation and excellence in healthcare.
-            </p>
-
-            <!-- <strong>Mission:</strong> -->
-            <p class="mission">
-              <span>mission: </span>To provide high-quality medical equipment,
-              improve device solutions, and offer reliable support to healthcare
-              providers to achieve exceptional patient care.
-            </p>
-          </div>
+          <p class="mail">assist.hora@hotmail.com</p>
         </div>
-      </section>
+      </div>
 
-      <section id="product" class="section">
-        <h1 class="service-head">services</h1>
-        <h5 class="service-h5">our services :</h5>
-        <div class="service-content">
-          <p>
-            <span>Maintenance and Repairs : </span> Regular servicing to maintain
-            equipment functionality and reliability.
-          </p>
-          <p>
-            <span>Emergency Services:</span> Fast response to minimize downtime
-            and ensure uninterrupted patient care.
-          </p>
-          <p>
-            <span>Installation and Setup : </span> Proper installation in
-            hospitals, clinics, and healthcare settings. Training for
-            professionals to ensure optimal usage.
-          </p>
-          <p>
-            <span>Consultation & Solutions : </span> Expert guidance on choosing
-            the best biomedical equipment for healthcare needs.
-          </p>
+      <!-- Content -->
+      <div class="home-content">
+        <h1>
+          Reliable biomedical <br />
+          equipments solution
+        </h1>
+        <p>Ensuring Safety and Excellence in Healthcare.</p>
+      </div>
+      <!-- <button class="whats-app">contact on what's app</button> -->
+      <div class="whatsapp-container">
+        <button class="whatsapp-btn" onclick="toggleWhatsApp()">💬</button>
+        <div class="whatsapp-panel">
+          <p>Chat with us on WhatsApp!</p>
+          <a href="https://wa.me/your-number" target="_blank">Start Chat</a>
         </div>
-      </section>
+      </div>
+      
+    </section>
 
-      <!-- Products & Services Section -->
-      <section id="services" class="section">
-        <div class="service-circle"></div>
-        <h1>Our Products & Services</h1>
+    <!-- About Us Section -->
+    <section id="about" class="section about-section">
+      <div class="about-top-left-circle"></div>
+      <div class="about-top-right-circle"></div>
+      <div class="about-buttom-left-circle"></div>
+      <div class="content">
+        <h1>ABOUT US</h1>
         <p>
-          We offer a wide range of biomedical equipment and maintenance services.
+          HORA Biomedical Systems is a trusted leader in biomedical equipment
+          sales and services, based in Bengaluru, Karnataka. Our mission is to
+          provide top-quality medical equipment solutions, backed by a team of
+          qualified and experienced professionals. We aim to enhance healthcare
+          facilities by offering cutting-edge technology, reliable support, and
+          comprehensive maintenance services.
         </p>
 
-        <div class="slider-container">
-          <!-- Card 1 -->
-          <div class="box-one box">
-            <div class="slider-wrapper" id="slider1">
-              <div class="slider">
-                <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
-              </div>
-              <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
-                ❮
-              </button>
-              <button class="btn next" onclick="moveSlide(1, 'slider1')">
-                ❯
-              </button>
-            </div>
+        <h2>Vision and Mission</h2>
+        <div class="vision-mission">
+          <!-- <strong>Vision:</strong> -->
+          <p class="vision">
+            <span>vision: </span>To be a trusted leader in biomedical solutions,
+            delivering innovation and excellence in healthcare.
+          </p>
 
-            <div class="product-content">
-              <p>Omron MC 246 Digital Thermometer</p>
-              <p>$345 - $354</p>
-              <p>
-                Quick measurement of oral & underarm temperature in Celsius &
-                Fahrenheit.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="box-one box">
-            <div class="slider-wrapper" id="slider2">
-              <div class="slider">
-                <img src="public/assets/svg/programmer.jpg" alt="Product 4" />
-                <img src="public/assets/logo/Asset 7.png" alt="Product 5" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 6" />
-              </div>
-              <button class="btn prev" onclick="moveSlide(-1, 'slider2')">
-                ❮
-              </button>
-              <button class="btn next" onclick="moveSlide(1, 'slider2')">
-                ❯
-              </button>
-            </div>
-
-            <div class="product-content">
-              <p>Blood Pressure Monitor</p>
-              <p>$120 - $150</p>
-              <p>Accurate and easy-to-use monitor with large display.</p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="box-one box">
-            <div class="slider-wrapper" id="slider3">
-              <div class="slider">
-                <img src="public/assets/svg/programmer.jpg" alt="Product 7" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 8" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 9" />
-              </div>
-              <button class="btn prev" onclick="moveSlide(-1, 'slider3')">
-                ❮
-              </button>
-              <button class="btn next" onclick="moveSlide(1, 'slider3')">
-                ❯
-              </button>
-            </div>
-
-            <div class="product-content">
-              <p>Stethoscope</p>
-              <p>$50 - $70</p>
-              <p>
-                Precision stethoscope with enhanced acoustics for accurate
-                diagnosis.
-              </p>
-            </div>
-          </div>
-
-          <div class="box-one box">
-            <div class="slider-wrapper" id="slider1">
-              <div class="slider">
-                <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
-              </div>
-              <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
-                ❮
-              </button>
-              <button class="btn next" onclick="moveSlide(1, 'slider1')">
-                ❯
-              </button>
-            </div>
-
-            <div class="product-content">
-              <p>Omron MC 246 Digital Thermometer</p>
-              <p>$345 - $354</p>
-              <p>
-                Quick measurement of oral & underarm temperature in Celsius &
-                Fahrenheit.
-              </p>
-            </div>
-          </div>
-
-          <div class="box-one box">
-            <div class="slider-wrapper" id="slider1">
-              <div class="slider">
-                <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
-              </div>
-              <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
-                ❮
-              </button>
-              <button class="btn next" onclick="moveSlide(1, 'slider1')">
-                ❯
-              </button>
-            </div>
-
-            <div class="product-content">
-              <p>Omron MC 246 Digital Thermometer</p>
-              <p>$345 - $354</p>
-              <p>
-                Quick measurement of oral & underarm temperature in Celsius &
-                Fahrenheit.
-              </p>
-            </div>
-          </div>
-
-          <div class="box-one box">
-            <div class="slider-wrapper" id="slider1">
-              <div class="slider">
-                <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
-                <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
-              </div>
-              <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
-                ❮
-              </button>
-              <button class="btn next" onclick="moveSlide(1, 'slider1')">
-                ❯
-              </button>
-            </div>
-
-            <div class="product-content">
-              <p>Omron MC 246 Digital Thermometer</p>
-              <p>$345 - $354</p>
-              <p>
-                Quick measurement of oral & underarm temperature in Celsius &
-                Fahrenheit.
-              </p>
-            </div>
-          </div>
+          <!-- <strong>Mission:</strong> -->
+          <p class="mission">
+            <span>mission: </span>To provide high-quality medical equipment,
+            improve device solutions, and offer reliable support to healthcare
+            providers to achieve exceptional patient care.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact Us Section -->
-      <section id="contact" class="section contact-section">
-        <div class="contact-circle"></div>
-        <div class="contact-container">
-          <div class="contact-info-form">
-            <h1>Contact Us</h1>
+    <section id="product" class="section">
+      <h1 class="service-head">services</h1>
+      <h5 class="service-h5">our services :</h5>
+      <div class="service-content">
+        <p>
+          <span>Maintenance and Repairs : </span> Regular servicing to maintain
+          equipment functionality and reliability.
+        </p>
+        <p>
+          <span>Emergency Services:</span> Fast response to minimize downtime
+          and ensure uninterrupted patient care.
+        </p>
+        <p>
+          <span>Installation and Setup : </span> Proper installation in
+          hospitals, clinics, and healthcare settings. Training for
+          professionals to ensure optimal usage.
+        </p>
+        <p>
+          <span>Consultation & Solutions : </span> Expert guidance on choosing
+          the best biomedical equipment for healthcare needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Products & Services Section -->
+    <section id="services" class="section">
+      <div class="service-circle"></div>
+      <h1>Our Products</h1>
+      <p>
+        We offer a wide range of biomedical equipment and maintenance services.
+      </p>
+
+      <div class="slider-container">
+        <!-- Card 1 -->
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider1">
+            <div class="slider">
+              <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
+              ❮
+            </button>
+            <button class="btn next" onclick="moveSlide(1, 'slider1')">
+              ❯
+            </button>
+          </div>
+
+          <div class="product-content">
+            <p>Omron MC 246 Digital Thermometer</p>
+            <p>$345 - $354</p>
             <p>
-              Get in touch with us to learn more about our medical equipment and
-              services.
+              Quick measurement of oral & underarm temperature in Celsius &
+              Fahrenheit.
             </p>
-            <ul>
-              <li><strong>Email:</strong> info@medicalequipments.com</li>
-              <li><strong>Phone:</strong> +1 (800) 555-1234</li>
-              <li><strong>Address:</strong> 123 Medical Ave, Health City</li>
-            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider2">
+            <div class="slider">
+              <img src="public/assets/svg/programmer.jpg" alt="Product 4" />
+              <img src="public/assets/logo/Asset 7.png" alt="Product 5" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 6" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider2')">
+              ❮
+            </button>
+            <button class="btn next" onclick="moveSlide(1, 'slider2')">
+              ❯
+            </button>
           </div>
 
-          <!-- Google Form -->
-          <form
-            action="YOUR_GOOGLE_FORM_ACTION_URL"
-            method="POST"
-            target="_blank"
-            class="contact-form"
-          >
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input
-                type="text"
-                name="entry.YOUR_NAME_FIELD_ID"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input
-                type="email"
-                name="entry.YOUR_EMAIL_FIELD_ID"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea
-                name="entry.YOUR_MESSAGE_FIELD_ID"
-                placeholder="Write your message here..."
-                rows="5"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit">Send Message</button>
-          </form>
+          <div class="product-content">
+            <p>Blood Pressure Monitor</p>
+            <p>$120 - $150</p>
+            <p>Accurate and easy-to-use monitor with large display.</p>
+          </div>
         </div>
-      </section>
 
-      <!-- Smooth Scrolling Script -->
-      <script src="scripts.js"></script>
-      <script></script>
-    </body>
-  </html>
+        <!-- Card 3 -->
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider3">
+            <div class="slider">
+              <img src="public/assets/svg/programmer.jpg" alt="Product 7" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 8" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 9" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider3')">
+              ❮
+            </button>
+            <button class="btn next" onclick="moveSlide(1, 'slider3')">
+              ❯
+            </button>
+          </div>
+
+          <div class="product-content">
+            <p>Stethoscope</p>
+            <p>$50 - $70</p>
+            <p>
+              Precision stethoscope with enhanced acoustics for accurate
+              diagnosis.
+            </p>
+          </div>
+        </div>
+
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider1">
+            <div class="slider">
+              <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
+              ❮
+            </button>
+            <button class="btn next" onclick="moveSlide(1, 'slider1')">
+              ❯
+            </button>
+          </div>
+
+          <div class="product-content">
+            <p>Omron MC 246 Digital Thermometer</p>
+            <p>$345 - $354</p>
+            <p>
+              Quick measurement of oral & underarm temperature in Celsius &
+              Fahrenheit.
+            </p>
+          </div>
+        </div>
+
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider1">
+            <div class="slider">
+              <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
+              ❮
+            </button>
+            <button class="btn next" onclick="moveSlide(1, 'slider1')">
+              ❯
+            </button>
+          </div>
+
+          <div class="product-content">
+            <p>Omron MC 246 Digital Thermometer</p>
+            <p>$345 - $354</p>
+            <p>
+              Quick measurement of oral & underarm temperature in Celsius &
+              Fahrenheit.
+            </p>
+          </div>
+        </div>
+
+        <div class="box-one box">
+          <div class="slider-wrapper" id="slider1">
+            <div class="slider">
+              <img src="public/assets/svg/programmer.jpg" alt="Product 1" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 2" />
+              <img src="public/assets/svg/programmer.jpg" alt="Product 3" />
+            </div>
+            <button class="btn prev" onclick="moveSlide(-1, 'slider1')">
+              ❮
+            </button>
+            <button class="btn next" onclick="moveSlide(1, 'slider1')">
+              ❯
+            </button>
+          </div>
+
+          <div class="product-content">
+            <p>Omron MC 246 Digital Thermometer</p>
+            <p>$345 - $354</p>
+            <p>
+              Quick measurement of oral & underarm temperature in Celsius &
+              Fahrenheit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-circle"></div>
+      <div class="contact-container">
+        <div class="contact-info-form">
+          <h1>Contact Us</h1>
+          <p>
+            Get in touch with us to learn more about our medical equipment and
+            services.
+          </p>
+          <ul>
+            <li><strong>Email:</strong> info@medicalequipments.com</li>
+            <li><strong>Phone:</strong> +1 (800) 555-1234</li>
+            <li><strong>Address:</strong> 123 Medical Ave, Health City</li>
+          </ul>
+        </div>
+
+        <!-- Google Form -->
+        <form
+          action="YOUR_GOOGLE_FORM_ACTION_URL"
+          method="POST"
+          target="_blank"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              name="entry.YOUR_NAME_FIELD_ID"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="entry.YOUR_EMAIL_FIELD_ID"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              name="entry.YOUR_MESSAGE_FIELD_ID"
+              placeholder="Write your message here..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© HORA. All rights reserved.</p>
+      <div class="links">
+        <a href="/about">About</a> | <a href="/contact">Contact</a> |
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+      <div class="icons">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script src="scripts.js"></script>
+    <script></script>
+  </body>
+</html>
