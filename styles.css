@@ -539,7 +539,7 @@ body {
 }
 
 .contact-form button {
-  background: #03ff00;
+  background: #2b3868;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -788,10 +788,18 @@ body {
   
   .home-content h1 {
     font-size: 2.5rem;
+    min-width: 280px;
+    position: relative;
+    top: -85px;
+    right: 37px;
   }
   
   .home-content p {
+    
     font-size: 1.5rem;
+    position: relative;
+    top: -95px;
+    right: 37px;
   }
   
   .top-right-circle {
@@ -824,7 +832,7 @@ body {
   .bottom-left-container{
     width: 170px;
     /* margin-left: 0px; */
-    left: 25px;
+    left: 70px;
     top: 100px;
   }
   .contact-info .mail{
@@ -856,7 +864,7 @@ footer {
 }
 
 .links a {
-  color: #57e40a;
+  color:#25d366;
   text-decoration: none;
   font-size: 18px;
 }
@@ -889,7 +897,7 @@ footer {
 
 .icons i {
   font-size: 22px;
-  color: greenyellow;
+  color:#25d366;
 }
 
 /* Responsive Design */
@@ -952,7 +960,7 @@ footer {
   right: 0; /* Start from the right edge */
   display: flex;
   align-items: center;
-  z-index: 5;
+  z-index: 5555;
 }
 
 .whatsapp-btn {
@@ -993,61 +1001,3 @@ footer {
   font-weight: bold;
 }
 
-
-@media (max-width: 326px) {
-  .section {
-    padding: 100px 80px;
-  }
-
-  .home-content {
-    position: absolute;
-    right: 200px;
-    left: auto;
-  }
-
-  .home-content h1 {
-    font-size: 110px;
-    line-height: 94px;
-  }
-
-  .home-content p {
-    font-size: 3rem;
-  }
-
-  .phish {
-    height: 100px;
-    width: 200px;
-    border-radius: 0 200px 200px 0;
-    top: 250px;
-    left: -50px;
-  }
-
-  .top-right-circle {
-    top: -150px;
-    right: -150px;
-    width: 400px;
-    height: 400px;
-  }
-
-  .bottom-left-container {
-    bottom: -7px;
-    left: -157px;
-    height: 400px;
-    width: 751px;
-    border-radius: 0 200px 200px 0;
-  }
-
-  .circle-image {
-    width: 385px;
-    height: 385px;
-    border: 10px solid #f4e1fa;
-    margin: 10px;
-  }
-
-  .contact-info {
-    display: block;
-    position: absolute;
-    left: 50px;
-    transform: rotate(31deg);
-  }
-}
